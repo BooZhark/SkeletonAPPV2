@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input [(ngModel)]="user.name" name="name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input [(ngModel)]="user.surname" name="surname" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nivel de Educación</ion-label>
+      <ion-input [(ngModel)]="user.educationLevel" name="educationLevel" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Fecha de Nacimiento</ion-label>
+      <ion-datetime [(ngModel)]="user.dateOfBirth" name="dateOfBirth" required></ion-datetime>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" class="show-button">Mostrar</ion-button>
+    <ion-button expand="full" (click)="onClear()" class="clear-button">Limpiar</ion-button>
+  </form>
+</ion-content>

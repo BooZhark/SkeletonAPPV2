@@ -1,0 +1,80 @@
+@keyframes slideAndFade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(50%);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+ion-header {
+  ion-toolbar {
+    --background: transparent;
+    --color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .app-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    animation: slideAndFade 2500ms infinite;
+  }
+
+  .app-subtitle {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+  }
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+ion-item {
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+ion-button.login-button {
+  width: 90%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.create-account-link {
+  color: blue;
+  font-size: 14px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+ion-label {
+  font-size: 16px;
+}
+
+ion-input {
+  font-size: 16px;
+}
