@@ -20,7 +20,7 @@ export class LoginPage {
     const { name, surname } = this.user;
     const alert = await this.alertController.create({
       header: 'Información',
-      message: `Nombre: ${name}<br>Apellido: ${surname}`,
+      message: `Nombre: ${name} Apellido: ${surname}`,
       buttons: ['OK']
     });
 
